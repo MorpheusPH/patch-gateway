@@ -1,0 +1,13 @@
+[package]
+name = "patch-gateway"
+version = "0.1.0"
+authors = ["Morpheus Huang"]
+edition = "2021"
+
+[dependencies]
+k8s-openapi = { version = "0.18.0", features = ["api", "v1_26"] }
+kube = { version = "0.82.2", features = ["derive", "runtime"] }
+openssl = { version = "0.10.52", features = ["vendored"] }
+serde_json = "1.0.96"
+structopt = "0.3.26"
+tokio = { version = "1.28.1", features = ["full"] }
